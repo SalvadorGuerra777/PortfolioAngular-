@@ -1,0 +1,12 @@
+<div class="skills-container">
+    <h2 class="neon-text">Mis Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-card glass-card" *ngFor="let skill of skills">
+        <img [src]="skill.icon" [alt]="skill.name">
+        <h3>{{skill.name}}</h3>
+        <div class="skill-level">
+          <div class="skill-bar" [style.width]="skill.level + '%'"></div>
+        </div>
+      </div>
+    </div>
+  </div>

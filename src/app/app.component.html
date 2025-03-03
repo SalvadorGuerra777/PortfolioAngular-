@@ -1,0 +1,18 @@
+<nav class="glass-card">
+  <ul class="nav-list">
+    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a></li>
+    <li><a routerLink="/about" routerLinkActive="active">Sobre mí</a></li>
+    <li><a routerLink="/projects" routerLinkActive="active">Proyectos</a></li>
+    <li><a routerLink="/skills" routerLinkActive="active">Habilidades</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="glass-card">
+  <p>&copy; 2023 Salvador Guerra. Todos los derechos reservados.</p>
+</footer>
+
